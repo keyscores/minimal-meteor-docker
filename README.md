@@ -1,2 +1,2 @@
 # minimal-meteor-docker
-Minimal meteor dockerfile
+Minimal meteor dockerfile for sanity checking deployments.
