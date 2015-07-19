@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl wget unzip 
 RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install -y nodejs
 RUN curl https://install.meteor.com/ | sh
