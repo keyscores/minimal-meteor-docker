@@ -16,4 +16,3 @@ docker run -d -e PORT:80 -e ROOT_URL=http://myapp.com -e MONGO_URL=mongodb://<US
 
 NOTE:
 The default port is 80, so you should see it as soon as it is deployed.
-save
