@@ -13,13 +13,14 @@ RUN meteor build . --directory --architecture os.linux.x86_64
 #RUN ls
 #RUN meteor build . --architecture os.linux.x86_64 && \
 #RUN tar -xzf simple-todos-master.tar.gz -C ../
-
-WORKDIR /root/bundle/programs/server
+RUN ls
+WORKDIR /bundle/programs/server
 RUN npm install
 
 EXPOSE 80
 
-WORKDIR /root/bundle
+RUN ls
+WORKDIR /bundle
 CMD ["node", "main.js"]
 
 
