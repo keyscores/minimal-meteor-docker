@@ -9,18 +9,17 @@ WORKDIR /root
 RUN wget https://github.com/meteor/simple-todos/archive/master.zip && \
     unzip master.zip
 WORKDIR /root/simple-todos-master
-RUN meteor build . --directory --architecture os.linux.x86_64
+RUN meteor build . --architecture os.linux.x86_64
 #RUN ls
 #RUN meteor build . --architecture os.linux.x86_64 && \
-#RUN tar -xzf simple-todos-master.tar.gz -C ../
-RUN ls
-WORKDIR /bundle/programs/server
+RUN tar -xzf simple-todos-master.tar.gz -C ../
+
+WORKDIR /root/bundle/programs/server
 RUN npm install
 
 EXPOSE 80
 
-RUN ls
-WORKDIR /bundle
+WORKDIR /root/bundle
 CMD ["node", "main.js"]
 
 
