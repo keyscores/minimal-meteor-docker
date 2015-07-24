@@ -23,4 +23,4 @@ WORKDIR /root/bundle
 CMD ["node", "main.js"]
 
 
-#docker run -d -e ROOT_URL=http://myapp.com -e MONGO_URL=mongodb://new:asdf1234@dogen.mongohq.com:10077/ksdemosandbox -p 8080:80 keyscores/minimal-meteor-docker
+#docker run -d -e ROOT_URL=http://myapp.com -e MONGO_URL=mongodb://<user>:<pass>@dogen.mongohq.com:10077/ksdemosandbox -p 8080:80 keyscores/minimal-meteor-docker
